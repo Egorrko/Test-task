@@ -6,7 +6,7 @@ services:
     links:
       - db
     ports:
-      - "5000:5000"
+      - "80:5000"
     environment:
       HOST: db
       PORT: 3306

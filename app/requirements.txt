@@ -2,3 +2,4 @@ Flask
 PyMySql
 cryptography
 loguru
+gunicorn
