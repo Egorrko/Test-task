@@ -2,11 +2,19 @@ version: "3.9"
 services:
   app:
     build: ./app
+<<<<<<< HEAD
     container_name: "cherrypy"
     links:
       - db
     ports:
       - "5000:5000"
+=======
+    container_name: "Flask_App"
+    links:
+      - db
+    ports:
+      - "80:5000"
+>>>>>>> ac700b3c6e9bdde52447ddeb4dbeead904a4dbb5
     environment:
       HOST: db
       PORT: 3306
@@ -15,9 +23,15 @@ services:
       DB_NAME: db
   db:
     image: mysql
+<<<<<<< HEAD
     container_name: "mysql2"
     ports:
       - "32001:3306"
+=======
+    container_name: "MySQL_Database"
+    ports:
+      - "32000:3306"
+>>>>>>> ac700b3c6e9bdde52447ddeb4dbeead904a4dbb5
     environment:
       MYSQL_ROOT_PASSWORD: _________
     volumes:
