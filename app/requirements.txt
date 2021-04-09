@@ -3,10 +3,3 @@ cherrypy
 jinja2
 pymysql
 cryptography
-=======
-Flask
-PyMySql
-cryptography
-loguru
-gunicorn
->>>>>>> ac700b3c6e9bdde52447ddeb4dbeead904a4dbb5
