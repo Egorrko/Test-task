@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 cherrypy
 jinja2
 pymysql
