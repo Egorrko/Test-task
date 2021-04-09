@@ -1,0 +1,20 @@
+CREATE DATABASE db;
+use db;
+
+CREATE TABLE Types (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    Model VARCHAR(40) NOT NULL,
+    Mask VARCHAR(40) NOT NULL
+);
+
+CREATE TABLE Devices (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    Type INT NOT NULL,
+    SerialNumber VARCHAR(40) UNIQUE NOT NULL,
+    FOREIGN KEY (Type)  REFERENCES Types(Id)
+);
+
+INSERT INTO Types (Model, Mask) VALUES
+    ('TP-Link TL-WR74','XXAAAAAXAA'),
+    ('D-Link DIR-300','NXXAAXZXaa'),
+    ('D-Link DIR-300 S','NXXAAXZXXX');
